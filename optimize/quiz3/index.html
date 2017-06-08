@@ -1,15 +1,25 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width">
-    <link href="style.css" rel="stylesheet">
-    <link href="print.css" rel="stylesheet">
+    <style media="screen">
+      span {
+        color: blue;
+      }
+    </style>
+    <style media="print">
+      @media screen and (min-width: 1200px) {
+        span {
+          color: black;
+        }
+      }
+    </style>
   </head>
   <body>
-    <script src="ga-analytics.js"></script>
+    <script src="ga-analytics.js" async></script>
     <p>
       Hello <span>Fast Campus WAP Camp</span> students!
     </p>
     <div><img src="photo.png"></div>
-    <script src="app.js"></script>
+    <script src="app.js" async></script>
   </body>
 </html>
