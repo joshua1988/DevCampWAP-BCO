@@ -1,3 +1,24 @@
-span {
+html, body, div, p {
+  margin:0; padding: 0;
+}
+
+.wrap {
+  padding: 20px;
+}
+
+.name {
+  font-style: normal;
   color: blue;
+}
+
+.img {
+  width: 100%;
+  max-width: 300px;
+  vertical-align: top;
+}
+
+@media print {
+  .name {
+    color: deeppink;
+  }
 }
