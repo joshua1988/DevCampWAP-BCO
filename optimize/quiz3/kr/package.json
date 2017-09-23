@@ -1,18 +1,16 @@
 {
-  "name": "quiz3",
+  "name": "kr",
   "version": "1.0.0",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "ejs": "^2.5.7",
     "express": "^4.15.4"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
