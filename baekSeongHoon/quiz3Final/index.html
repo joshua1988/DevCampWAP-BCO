@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <!--<link href="style.css" rel="stylesheet">-->
+    <!-- 요청 수를 줄이기 위해 inline 화? 고민고민.. -->
+    <style>
+      span {
+        color: blue;
+      }
+    </style>
+    <!-- 점진적 로딩을 위한 -->
+    <link href="print.css" rel="stylesheet" media="print">
+
+    <!-- prefetch를 이용해 리소스를 먼저 다운받음 - 라이브러리 활용 -->
+    <link href="photo.png" rel="prefetch">
+  </head>
+  <body>
+    <p>
+      Hello <span>Fast Campus WAP Camp</span> students!
+    </p>
+
+    <div><img src="photo.png" width="800px" height="800px"></div>
+    <!--
+      DOM Rendering과 관련이 없다 하더라도 요청이 발생하면 멈추기 때문에..
+
+      app.js = 네트워크 요청이기 떄문에 Dom Redering과 관련이 없어도 async 사용
+      ga-analytics는 태그 내에 async가 적용되는 건 태그 속성으로 async를 붙이지 않아도 된다.
+    -->
+    <script src="app.js" async></script>
+    <script src="ga-analytics.js"></script>
+  </body>
+</html>
