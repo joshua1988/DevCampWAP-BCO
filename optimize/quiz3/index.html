@@ -1,15 +1,30 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width">
-    <link href="style.css" rel="stylesheet">
-    <link href="print.css" rel="stylesheet">
-  </head>
-  <body>
-    <script src="ga-analytics.js"></script>
-    <p>
-      Hello <span>Fast Campus WAP Camp</span> students!
-    </p>
-    <div><img src="photo.png"></div>
-    <script src="app.js"></script>
-  </body>
+
+<head>
+  <meta name="viewport" content="width=device-width">
+  <link href="print.css" rel="subresource" media="print">
+  </linkrel>
+  <link rel="subresource" href="ga-analytics.js">
+  <style>
+    span {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="ga-analytics.js" async></script>
+  <p>
+    Hello
+    <span>Fast Campus WAP Camp</span> students!
+  </p>
+  <div>
+    <img src="photo.png">
+  </div>
+  <script>
+    console.log('We are almost done with Browser Critical Rendering Optimization');
+  </script>
+
+</body>
+
 </html>
